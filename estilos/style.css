@@ -9,7 +9,7 @@
 
 body {
   font-family: var(--font);
-
+  background: beige;
 }
 
 .name {
@@ -156,7 +156,7 @@ main {
 
 .container {
   max-width: 900px;
-  min-height: 250vh;
+  min-height: 280vh;
   margin: 0 auto;
   background-color: #fff;
   border-radius: 5px;
@@ -185,7 +185,7 @@ footer {
   align-items: center;
   font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
   height: 8vh;
-  background: var(--navLat);
+  background: var(--nav);
 
 }
 
@@ -197,4 +197,33 @@ footer {
   border-bottom: 1px solid #ccc;
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.img{
+  margin-top: 20px;
+  max-width: 500px;
+  min-width: 250px;
+  max-height: 500px;
+}
+
+legend{
+  text-align: justify;
+  max-width: 500px;
+  min-width: 250px;
+  margin-top: 10px;
+  line-height: 1;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.border{
+  border: 2px black solid;
+  border-radius: 10px;
+  max-width: 520px;
+  max-height: 500px;
+  background: var(--nav);
+}
+
+.espaçamento{
+  margin-top: 5px;
 }
