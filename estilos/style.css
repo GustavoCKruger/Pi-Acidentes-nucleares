@@ -20,8 +20,8 @@ body {
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  text-rendering: optimizeSpeed;
+  /* box-sizing: border-box;
+  text-rendering: optimizeSpeed; */
 }
 
 nav a {
@@ -180,10 +180,10 @@ main {
 }
 
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: var(--nav);
-    color: #fff;
+  text-align: center;
+  padding: 10px;
+  background-color: var(--nav);
+  color: #fff;
 }
 
 .biblio {
@@ -196,7 +196,7 @@ footer {
   margin-bottom: 20px;
 }
 
-.img{
+.img {
   margin-top: 20px;
   max-width: 500px;
   min-width: 500px;
@@ -204,7 +204,7 @@ footer {
   align-items: center;
 }
 
-legend{
+legend {
   text-align: justify;
   max-width: 500px;
   min-width: 500px;
@@ -212,10 +212,10 @@ legend{
   line-height: 1;
   font-size: 15px;
   margin-bottom: 20px;
-  
+
 }
 
-.border{
+.border {
   border: 2px black solid;
   border-radius: 10px;
   max-width: 520px;
@@ -223,25 +223,43 @@ legend{
   background: var(--nav);
 }
 
-.espaçamento{
+.espaçamento {
   margin-top: 5px;
 }
 
-.textoCentral{
+.textoCentral {
   text-align: center;
   margin-top: 20px;
 }
 
-.princ{
+.princ {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.containerIndex{
+.containerIndex {
+  /*display: flex;
+  max-width: 900px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
   display: flex;
+  flex-direction: column;
+  align-items: center;*/
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+  margin-left: 10px;
+  max-width: 100vh;
+  margin: auto;
+  color: var(--nav);
 }
 
-.flex{
+/*.flex {
   background-color: #f1f1f1;
   display: flex;
   margin-right: 10px;
@@ -257,4 +275,28 @@ legend{
   width: 25vh;
   max-width: 25vh;
   border: 2px black solid;
+}*/
+
+.imgIndex {
+  max-width: 30vh;
+  max-height: 30vh;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+}
+
+.topo {
+  background-color: #f1f1f1;
+  width: 80px;
+  height: 20px;
+  border: 2px black solid;
+  text-align: center;
+  margin-top: 200px;
+}
+
+.griditem {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
