@@ -278,20 +278,15 @@ legend {
 }*/
 
 .imgIndex {
-  max-width: 30vh;
+  max-width: 40vh;
   max-height: 30vh;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
+  border: 2px solid var(--nav);
+  border-top: 20px solid var(--nav);
 }
 
-.topo {
-  background-color: #f1f1f1;
-  width: 80px;
-  height: 20px;
-  border: 2px black solid;
-  text-align: center;
-  margin-top: 200px;
-}
+
 
 .griditem {
   background-color: #fff;
@@ -299,4 +294,10 @@ legend {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
+
+.griditem > h1{
+  align-self: center;
+}
+
