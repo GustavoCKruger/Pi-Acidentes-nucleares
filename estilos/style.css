@@ -278,7 +278,9 @@ legend {
 }*/
 
 .imgIndex {
+  min-width: 40vh;
   max-width: 40vh;
+  min-height: 30vh;
   max-height: 30vh;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
@@ -291,7 +293,7 @@ legend {
 .griditem {
   background-color: #fff;
   border: 1px solid #ddd;
-  padding: 20px;
+  padding-bottom: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   position: relative;
@@ -299,5 +301,15 @@ legend {
 
 .griditem > h1{
   align-self: center;
+}
+
+.texto{
+  margin: 0 0 0 9vh;
+}
+
+.link{
+  margin-left: 4.5vh;
+  margin-top: 10px;
+  color: var(--navLat);
 }
 
