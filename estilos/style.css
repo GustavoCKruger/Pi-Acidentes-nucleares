@@ -50,12 +50,7 @@ nav {
 
 main {
   background: url("bg.jpg") no-repeat center center;
-<<<<<<< HEAD
   background-size: cover; 
-=======
-  background-size: cover;
-  /*height: 92vh;*/
->>>>>>> 134b6275519a394df8af30342950c7fc2e69d644
 }
 
 .nav-list {
@@ -156,12 +151,7 @@ main {
 
 .container {
   max-width: 900px;
-<<<<<<< HEAD
   margin: 20px auto 20px;
-=======
-  /*min-height: 350vh;*/
-  margin: 0 auto;
->>>>>>> 134b6275519a394df8af30342950c7fc2e69d644
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 4px 8px black;
@@ -254,10 +244,6 @@ legend {
   color: var(--nav);
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 134b6275519a394df8af30342950c7fc2e69d644
 
 .imgIndex {
   min-width: 40vh;
