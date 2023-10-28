@@ -52,8 +52,7 @@ nav {
 
 main {
   background: url("bg.jpg") no-repeat center center;
-  background-size: cover;
-  height: 92vh;
+  background-size: cover; 
 }
 
 .nav-list {
@@ -79,7 +78,7 @@ main {
   transition: 0.3s;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 1100px) {
   body {
     overflow-x: hidden;
   }
@@ -89,7 +88,6 @@ main {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    height: 8vh;
     background: var(--navLat);
   }
 
@@ -99,11 +97,11 @@ main {
   }
 
   .nav-list {
-    position: absolute;
+    position: fixed;
     top: 8vh;
     right: 0;
     width: 50%;
-    height: 92vh;
+    height: 81vh;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
@@ -121,7 +119,8 @@ main {
   .mobile-menu {
     display: block;
   }
-
+  
+ 
 }
 
 .nav-list.active {
@@ -156,8 +155,7 @@ main {
 
 .container {
   max-width: 900px;
-  min-height: 350vh;
-  margin: 0 auto;
+  margin: 20px auto 20px;
   background-color: #fff;
   border-radius: 5px;
   box-shadow: 0 4px 8px black;
@@ -238,16 +236,6 @@ legend {
 }
 
 .containerIndex {
-  /*display: flex;
-  max-width: 900px;
-  margin: 0 auto;
-  background-color: #fff;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;*/
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
@@ -259,23 +247,7 @@ legend {
   color: var(--nav);
 }
 
-/*.flex {
-  background-color: #f1f1f1;
-  display: flex;
-  margin-right: 10px;
-  margin: auto;
-  border: 3px solid var(--color2);
-  border-bottom-left-radius: 15px;
-  border-bottom-right-radius: 15px;
-  flex-basis: 30%;
-  flex-grow: 1;
-  flex-shrink: 1;
-  height: 35vh;
-  max-height: 35vh;
-  width: 25vh;
-  max-width: 25vh;
-  border: 2px black solid;
-}*/
+
 
 .imgIndex {
   min-width: 40vh;
@@ -313,3 +285,46 @@ legend {
   color: var(--navLat);
 }
 
+
+
+@media (max-width: 999px) {
+  .containerIndex {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin-left: 10px;
+    max-width: 40vh;
+    color: var(--nav);
+
+  }
+  
+  
+  
+  .imgIndex {
+    min-width: 40vh;
+    max-width: 40vh;
+    min-height: 30vh;
+    max-height: 30vh;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: 2px solid var(--nav);
+    border-top: 20px solid var(--nav);
+  }
+  
+  
+  
+  .griditem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .textoCentral {
+    margin-right: 5px;
+    margin-top: 20px;
+  }
+}
