@@ -358,7 +358,14 @@ footer {
 }
 
 @media (max-width: 376px) {
-  
+  .img {
+    margin-top: 20px;
+    max-width: 300px;
+    min-width: 300px;
+    max-height: 300px;
+    align-items: center;
+  }
+
   .ref{
     max-width: 296px;
   }
