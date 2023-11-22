@@ -76,21 +76,21 @@ main {
   transition: 0.3s;
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 999px) {
   body {
     overflow-x: hidden;
   }
 
   nav {
-    display: flex;
+    width: 100%;
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
-    background: var(--navLat);
+    background: var(--nav);
   }
 
   .name {
-    color: var(--nav);
+    color: var(--navLat);
     font-family: var(--font);
   }
 
@@ -99,14 +99,15 @@ main {
     top: 8vh;
     right: 0;
     width: 50%;
-    height: 81vh;
+    height: 92%;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
     transform: translateX(100%);
     transition: transform 0.3s ease-in;
-    background: var(--navLat);
-    color: var(--nav);
+    background: var(--nav);
+    color: var(--navLat);
+    z-index: 1;
   }
 
   .nav-list li {
@@ -199,17 +200,6 @@ footer {
   align-items: center;
 }
 
-legend {
-  text-align: justify;
-  max-width: 500px;
-  min-width: 500px;
-  margin-top: 10px;
-  line-height: 1;
-  font-size: 15px;
-  margin-bottom: 20px;
-
-}
-
 .border {
   border: 2px black solid;
   border-radius: 10px;
@@ -281,16 +271,39 @@ legend {
   color: var(--navLat);
 }
 
+@media (max-width: 1200px) {
+  
+  .containerIndex {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    margin-left: auto;
+    max-width: 40vh;
+    color: var(--nav);
+    
+  }
+
+  .griditem {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+}
 
 
-@media (max-width: 999px) {
+@media (max-width: 722px) {
   .containerIndex {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     padding: 20px;
     justify-content: center;
-    margin-left: 10px;
+    margin-left: auto;
     max-width: 40vh;
     color: var(--nav);
 
@@ -317,10 +330,29 @@ legend {
     padding-bottom: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
   }
 
   .textoCentral {
     margin-right: 5px;
     margin-top: 20px;
   }
+
+  .ref{
+    margin-left: 20px;
+  }
+
+  .margem{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .img {
+    margin-top: 20px;
+    max-width: 400px;
+    min-width: 400px;
+    max-height: 400px;
+    align-items: center;
+  }
 }
+
