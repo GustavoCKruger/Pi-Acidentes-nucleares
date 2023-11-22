@@ -6,6 +6,10 @@
   --nav: rgb(173, 39, 39);
   --navLat: black;
 }
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: var(--font);
@@ -17,10 +21,6 @@ body {
   font-family: var(--font);
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
 
 nav a {
   color: var(--color3);
@@ -75,7 +75,9 @@ main {
   margin: 8px;
   transition: 0.3s;
 }
+/*=========================================
 
+=========================================*/
 @media (max-width: 999px) {
   body {
     overflow-x: hidden;
