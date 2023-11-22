@@ -297,6 +297,8 @@ footer {
 
 
 @media (max-width: 722px) {
+
+
   .containerIndex {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -352,6 +354,13 @@ footer {
     min-width: 400px;
     max-height: 400px;
     align-items: center;
+  }
+}
+
+@media (max-width: 376px) {
+  
+  .ref{
+    max-width: 296px;
   }
 }
 
